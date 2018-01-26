@@ -44,9 +44,6 @@ namespace DapperHelper
             Console.ReadKey();
         }
 
-        /// <summary>
-        /// 一般Select
-        /// </summary>
         static void Example1()
         {
             Console.WriteLine("一般Select");
