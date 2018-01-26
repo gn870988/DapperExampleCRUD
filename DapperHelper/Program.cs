@@ -155,14 +155,14 @@ namespace DapperHelper
             if (File.Exists(dbPath)) return;
             SQLiteConnection.CreateFile(dbPath);
 
-            CreateData();
+            CreateTable();
             InsertData();
         }
 
         /// <summary>
         /// Create 範例
         /// </summary>
-        static void CreateData()
+        static void CreateTable()
         {
             d.Execute(@"CREATE TABLE IF NOT EXISTS Member 
                         (Id INTEGER PRIMARY KEY AUTOINCREMENT, 
